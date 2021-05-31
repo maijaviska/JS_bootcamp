@@ -1,0 +1,53 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="calc.css">
+        
+    </head>
+    <body>
+        <div id = "calculator">
+            <div id="result">0</div>
+            <div id="buttons">
+                <div class="row">
+                    <button onclick="setOperator(OPERATION_SQUAREROOT)">√</button>
+                    <button onclick="setOperator(OPERATION_SQUARE)">²</button>
+                    <button onclick="setOperator(OPERATION_MODULO)">%</button>
+                    <button onclick="reset()">C</button>
+
+                </div>
+                <div class="row">
+                    <button onclick="setInputNumber(this)">7</button>
+                    <button onclick="setInputNumber(this)">8</button>
+                    <button onclick="setInputNumber(this)">9</button>
+                    <button onclick="setOperator(OPERATION_DIVISION)">÷</button>
+
+                </div>
+                <div class="row">
+                    <button onclick="setInputNumber(this)">4</button>
+                    <button onclick="setInputNumber(this)">5</button>
+                    <button onclick="setInputNumber(this)">6</button>
+                    <button onclick="setOperator(OPERATION_MULTIPLICATIO)">*</button>
+
+                </div>
+                <div class="row">
+                    <button onclick="setInputNumber(this)">1</button>
+                    <button onclick="setInputNumber(this)">2</button>
+                    <button onclick="setInputNumber(this)">3</button>
+                    <button onclick="setOperator(OPERATION_ADDITION)">-</button>
+
+                </div>
+                <div class="row">
+                    <button onclick="setInputNumber(this)">0</button>
+                    <button onclick="setCommaEnebled(true)">.</button>
+                    <button onclick="setOperator(OPERATION_ADDITION)">+</button>
+                    <button onclick="setOperator(OPERATION_EQUALS)">=</button>
+
+                </div>
+            </div>
+        </div>
+        
+
+
+
+        <script src="calc.js"></script>
+    </body>
+</html>

@@ -1,0 +1,45 @@
+#content-wrapper {
+    width: 400px;
+    height: 400px;
+    font-size: 150px;
+    background-color: rgb(127, 136, 179);
+    display: flex;
+    justify-content: center;
+    position: relative;
+    left: 30%;
+    top: 20%;
+}
+
+#number-container {
+    width: 40%;
+    height: 100%;
+    font-size: 100px;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    position: relative;
+    left: 25%;
+}
+
+
+
+#button-container {
+    width:  50%;
+    height: 10%;
+    position: relative;
+    top: 50%;
+    right: 20%;
+}
+
+#minus-button {
+    width: 40%;
+    height: 100%;
+    font-weight: bold;
+}
+
+#plus-button {
+    width: 40%;
+    height: 100%;
+    font-weight: bold;
+}

@@ -1,0 +1,31 @@
+#counterWrapper {
+    width: 800px;
+    height: 600px;
+    background-color: gray;
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border: 2px solid;
+
+}
+
+#number {
+    width: 100%;
+    height: 75%;
+    border-bottom: solid gray;
+    font-size: 150px;
+    text-align: center;
+}
+
+#buttons {
+    width: 100%;
+    height: 25%;
+    display: flex;
+}
+
+.butt {
+    width: 50%;
+    background-color: transparent;
+    font-size: 70px;
+}
