@@ -1,0 +1,80 @@
+docker run -it --rm node:alpine
+
+Open PowerShell application
+4. run the command "docker run -it --rm node:alpine sh"
+
+docker run -it --rm -v ${PWD}:/app node:alpine sh
+docker run -it --rm -v ${PWD}:/app -p 3000:3000  node:alpine sh
+
+New project setup:
+1. docker run -it --rm -v ${PWD}:/app -p 3000:3000 node:alpine sh
+2. cd app
+3. npm init
+4. npm install express
+5. create index.js file
+6. node index.js
+
+
+How to run existing project
+1. docker run -it --rm -v ${PWD}:/app -p 3000:3000 node:alpine sh
+2. cd app
+3. node index.js
+
+REST
+1. Content type = JSON
+2. Rspon with proper HTTP status code
+3. Rueles how we write our URLs
+4. User proper HTTP verb
+
+
+Create
+Read
+Update
+Ddelete
+
+/{entity name in plural}
+:id - identivier for an entity
+
+GET /tasks - gives us all tasks
+GET /tasks/:id - give info about one speciffic entity
+POST /tasks - requires JSON body, creates a new entity
+PUT /tasks/:id - requires JSON body, updates an existing entity
+DELETE /tasks/:id - deletes specific entity
+
+
+GET /tasks/:taskId/comments
+GET /tasks/:taskId/comments/:commentId
+POST /tasks/:taskId/comments
+PUT /tasks/:taskId/comments/:commentId
+DELETE /tasks/:taskId/comments/:commentId
+
+
+docker-compose up -d     Will start the containers
+docker-compose down        Will stop the containers
+docker-compose ps           Will spit out info about current status of containers
+
+1. We have a main branch
+2. All feature bacnhes are created off of main branch
+3. Every person has their own branch
+4. When you want to get your feature changes into main branch, you create a PR in the Git Web version and merge into
+5. Every person should get these changes onto their feature branch. This happens
+    1. Commit all local changes
+    2. In github desktop go to branch -> update from main
+    3. Solve all conflicts, if there are any
+
+
+docker-compose exec api sh
+
+for new project with docker compose:
+docker-compose up -d        (you should get 2 containers running)
+docker-compose ps           (to make sure the containers are running)
+docker-compose exec api sh  (to connect to the API container)
+npm install                 (only needed the first time you run the project)
+node src/index.js           (to run the server)
+crtl + C                    (to exit out of the server)
+exit                        (to quit the container)
+docker-compose stop         (stop the containers)
+
+npx create-react-app lesson-15
+npm install react-router-dom@6
+

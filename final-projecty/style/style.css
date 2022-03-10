@@ -1,0 +1,49 @@
+html, body {
+    padding: 0;
+    margin: 0;
+}
+
+#banner-img {
+    width: 100%;
+    height: 100%;
+}
+
+#background-img {
+    width: 100%;
+    height: 70%;
+}
+
+#height {
+    width: 100%;
+    height: 300px;
+}
+
+#nav-buttons {
+    height: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid black;
+    background-color: burlywood;
+    font-family: 'Great Vibes';
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.nav-button {
+    margin: 5em;
+    width: 150px;
+    height: 85%;
+    border-top-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border: 1px solid goldenrod;
+}
+
+.nav-button:hover {
+    transition: background-color 1s;
+    background-color: blanchedalmond;
+}
+
+.nav-button:active {
+    color: darkslategrey;
+}

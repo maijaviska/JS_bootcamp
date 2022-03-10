@@ -1,0 +1,38 @@
+git project
+
+Hackaton 1
+Here is the link to the landing page created on Saturday by Santa, Baiba, Indra and Ieva: https://github.com/PetersoneIeva/bootcamp-hackaton-1
+Here is the link to GitHub from Laura S, Laura E and Kristine https://github.com/KristinePolakova/js-firstHackathon
+Here is the link to GitHub from Irina, Maija and Monta https://github.com/PecinaMonta/HACKATON-1
+Project created by Līga, Anastasija and Laima: https://github.com/laimav/Mugs-For-Developers
+From Beāte, Arnita and Valerija https://github.com/valeriastorozhuk/15.01.-hackaton
+------------------------------------------------------------------------------------------------
+
+Hackaton 2
+Līga, Maija, Laura S. https://github.com/ligarunge/Hackathon-2.git
+https://github.com/KristinePolakova/js-secondHackathon  Valērija, Laura E., Baiba, Kristīne
+
+https://github.com/PecinaMonta/HACKATHON-2 Laima, Santa, Irina, Monta
+https://github.com/AnastasiaSo2020/Kitty-clothes Anastasija, Arnita, Ieva
+
+----------------------------------------------------------------------------------------------------
+
+Janis Mozgis GIT
+https://github.com/janismozgis-rcs/bc-4-2-tasks-api
+https://github.com/janismozgis-rcs/bc-4-2-lesson-16
+https://github.com/janismozgis-rcs/bc-4-2-lesson-17
+https://github.com/janismozgis-rcs/bc-4-2-lesson-18
+Just remember - if you are using it, you have to run "npm install"
+https://github.com/janismozgis-rcs/bc-4-2-sandbox
+https://github.com/janismozgis-rcs/bc-4-2-lesson-19
+----------------------------------------------------------------------------------------------
+Hackaton 3
+Līga, Baiba, Irina, Laima https://github.com/ligarunge/hackathon-3
+https://github.com/PecinaMonta/hackathon-3 Ieva, Arnita, Monta
+https://github.com/LauraStabulniece/hackathon-3 Laura, Anastasija, Kristīne
+https://github.com/s-avo/hackathon-3 Santa
+https://github.com/maijaviska/hackat-3.git Valeria, Laura E un Maija
+------------------------------------------------------------------------------------------------
+
+
+

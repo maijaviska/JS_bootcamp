@@ -1,0 +1,18 @@
+new expres proejct
+routes file to register a user
+POST /users
+Do proper validation
+
+name - string, requred
+last_name - string, requred
+email - string, requred, must be an email
+age - int, requred, must be a int, above 12
+nickname - string, optional
+
+
+If all is good
+{"message": "user created"}
+
+If validation fails
+
+{"message": "validation failed", "error": [...]}

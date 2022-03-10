@@ -36,7 +36,8 @@
 
 #controls {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
+    align-items: center;
     border-left: 1px solid black;
     border-bottom: 1px solid black;
     border-right: 1px solid black;
@@ -70,3 +71,9 @@
 .clicked-on {
     background-color: orangered;
 }
+
+/* #hp-text {
+    margin-left: 1000px;
+}
+
+#hp */

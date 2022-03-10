@@ -1,0 +1,13 @@
+New project setup:
+1. docker run -it --rm -v ${PWD}:/app -p 3000:3000 node:alpine sh
+2. cd app
+3. npm init
+4. npm install express
+5. create index.js file
+6. node index.js
+
+
+How to run existing project
+1. docker run -it --rm -v ${PWD}:/app -p 3000:3000 node:alpine sh
+2. cd app
+3. node index.js

@@ -1,0 +1,146 @@
+13. Write a function to compute the factors of a positive integer.
+
+14. Write a function to convert an amount to coins.
+Sample function : amountTocoins(46, [25, 10, 5, 2, 1])
+Here 46 is the amount. and 25, 10, 5, 2, 1 are coins.
+Output : 25, 10, 10, 1
+
+15. Write a function to compute the value of bn where n is the exponent and b is the bases. Accept b and n from the user and display the result.
+
+16. Write a function to extract unique characters from a string.
+Example string : "thequickbrownfoxjumpsoverthelazydog"
+Expected Output : "thequickbrownfxjmpsvlazydg"
+
+17. Write a function to  get the number of occurrences of each letter in specified string.
+
+18. Write a function for searching JavaScript arrays with a binary search.
+Note : A binary search searches by splitting an array into smaller and smaller chunks until it finds the desired value.
+
+19. Write a function that returns array elements larger than a number.
+
+20. Write a function that generates a string id (specified length) of random characters.
+Sample character list : "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789"
+
+21. Write a function to get all possible subset with a fixed length (for example 2) combinations in an array.
+Sample array : [1, 2, 3] and subset length is 2
+Expected output : [[2, 1], [3, 1], [3, 2], [3, 2, 1]]
+
+22. Write a function that accepts two arguments, a string and a letter and the function will count the number of occurrences of the specified letter within the string.
+Sample arguments : 'w3resource.com', 'o'
+Expected output : 2
+
+23. Write a function to find the first not repeated character.
+Sample arguments : 'abacddbec'
+Expected output : 'e'
+
+24. Write a function to apply Bubble Sort algorithm.
+Note : According to wikipedia "Bubble sort, sometimes referred to as sinking sort, is a simple sorting algorithm that works by repeatedly stepping through the list to be sorted, comparing each pair of adjacent items and swapping them if they are in the wrong order".
+Sample array : [12, 345, 4, 546, 122, 84, 98, 64, 9, 1, 3223, 455, 23, 234, 213]
+Expected output : [3223, 546, 455, 345, 234, 213, 122, 98, 84, 64, 23, 12, 9, 4, 1]
+
+25. Write a function that accept a list of country names as input and returns the longest country name as output.
+Sample function : Longest_Country_Name(["Australia", "Germany", "United States of America"])
+Expected output : "United States of America"
+
+26. Write a function to find longest substring in a given a string without repeating characters.
+
+27. Write a function that returns the longest palindrome in a given string.
+
+Note: According to Wikipedia "In computer science, the longest palindromic substring or longest symmetric factor problem is the problem of finding a maximum-length contiguous substring of a given string that is also a palindrome. For example, the longest palindromic substring of "bananas" is "anana". The longest palindromic substring is not guaranteed to be unique; for example, in the string "abracadabra", there is no palindromic substring with length greater than three, but there are two palindromic substrings with length three, namely, "aca" and "ada".
+In some applications it may be necessary to return all maximal palindromic substrings (that is, all substrings that are themselves palindromes and cannot be extended to larger palindromic substrings) rather than returning only one substring or returning the maximum length of a palindromic substring.
+
+28. Write a JavaScript program to pass a 'JavaScript function' as parameter.
+
+29. Write a function to get the function name.
+--------------------------------------------------------
+
+import express from "express";
+const app = express();
+const port = 3000; // 8080, 8081
+
+// GET /tasks - gives us all tasks
+app.get('/tasks', (req, res) => {
+    res.send('{"message":"Get all the tasks"}');
+});
+
+
+// GET /tasks/:id - give info about one speciffic entity
+app.get('/tasks/:id', (req, res) => {
+    res.send('{"message":"Get info about speciffic task"}');
+});
+
+// POST /tasks - requires JSON body, creates a new entity
+app.post('/tasks', (req, res) => {
+    res.send('{"message":"Create a task"}');
+});
+
+// PUT /tasks/:id - requires JSON body, updates an existing entity
+app.put('/tasks/:id', (req, res) => {
+    res.send('{"message":"Update speciffic task"}');
+});
+
+// DELETE /tasks/:id - deletes specific entity
+app.delete('/tasks/:id', (req, res) => {
+    res.send('{"message":"Delete speciffic task"}');
+});
+
+
+app.listen(port, () => {
+    console.log(`Server is up and running on port ${port}`);
+});
+----------------------------------------------------------------------------------------
+Task 2:
+Replicate these pages:
+https://getbootstrap.com/docs/5.1/examples/jumbotron/
+https://getbootstrap.com/docs/5.1/examples/blog/
+----------------------------------------------------------------------------------------
+- Create a brand new React app
+- Do the initial cleanup
+
+1. Pass a word / phrase to a component as a param and dispay a 
+message if the word is a palindome or not:
+"{word}" is a palindome
+"{word}" is not a palindrome
+Do this for 3 words
+
+2. Pass 2 words / phrases as parameters to a component. 
+Show a message if they are anagrams or not
+"{word1}" and "{wrod2}" are anagrams
+Do this for 3 words / phrases
+ 
+3. Create a component, that will receive one paramater - a word.
+The component should display this content:
+{word} - {number of letters in it}
+The word should be bold
+the background color of the component should be red, 
+if the number of letters in it is even, 
+and green if it is odd
+Do this for 3 word
+-----------------------------------------------------------------------------------
+3.01	Introduction to back-end programming, introduction to node JS
+4.01	Docker setup
+6.01	Docker explained, node project setup
+10.01	NPM, node modules, practical tasks
+11.01	Node modules, practical tasks
+13.01	import / export, arrow functions, practical tasks
+15.01	Hackaton - building e-commerce site
+17.01	Node modules, packages
+18.01	express JS intro
+20.01	express JS sending JSON, body-parser
+24.01	express JS middlewares
+25.01	express JS validation, databases, docker-compose
+27.01	practical tasks, calculator + CSS pages
+29.01	Hackaton
+31.01	Databases, CAP theorem, Models, mongoose
+1.02	Practical tasks, wrap up with backend
+3.02	React introduction and setup
+7.02	react components and properties
+8.02	React event handling and use state hook
+10.02	React router, creating website using components
+12.02	Hackaton
+14.02	loops in react
+15.02	React practical tasks
+17.02	React mapping JSX elements
+21.02	Q/A session, reviewing practical tasks
+22.02	React router - routing to pages and reading data files with specific records by index
+24.02	Q/A session, reviewing practical tasks

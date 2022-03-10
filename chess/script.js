@@ -11,16 +11,16 @@ canvas.width = TILE_WIDTH * 8
 canvas.height = TILE_HEIGHT * 8
 canvas.style.border = '1px solid black'
 
-function createImage(x, y){
-    let img = new Image()
-    img.width  = TILE_WIDTH * 0.8
-    img.height = TILE_HEIGHT * 0.8
-    img.src    = 'heart.pgn'
-    img.onload function() {
-        ctx.drawImage(img, x, y)
-    }
-    return img
-}
+// function createImage(x, y){
+//     let img = new Image()
+//     img.width  = TILE_WIDTH * 0.8
+//     img.height = TILE_HEIGHT * 0.8
+//     img.src    = 'heart.pgn'
+//     img.onload function() {
+//         ctx.drawImage(img, x, y)
+//     }
+//     return img
+// }
 
 class Board {
 
@@ -109,3 +109,4 @@ class Rook extends Figure {
 
 let board = new Board
 board.draw()
+

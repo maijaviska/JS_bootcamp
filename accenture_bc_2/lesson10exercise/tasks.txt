@@ -1,0 +1,9 @@
+1. GET /square/{50}
+Should print out a list of numbers from 1 to 50, with every value squared 
+(outout should be array in JSON)
+
+2. GET /days-till-christmas
+Should reutrn the days till next christmas - "There are 341 days till christmas"
+
+3. GET /is-leap-yar/{2022}
+Should return "2022 is not a leap year"

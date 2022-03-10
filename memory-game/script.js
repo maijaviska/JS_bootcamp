@@ -2,12 +2,26 @@ let rows = 3;
 let cols = 6;
 let colors = []
 
-let mainContainer = document.getElementById('main-container')
+let hp = null;
+const DEFAULT_HP = 3
 
+let mainContainer = document.getElementById('main-container')
+let pairs = document.getElementById('pairs')
+
+let wait = false
 let gameStarted = false
 let chosenCard = null
 
 let gameCards = []
+
+window.onload = function(){
+    let healthpoints = parseInt(document.getElementById('hp').innerText)
+    if (Number.isInteger(healthpoints) && healthpoints > 0) {
+        hp = healthpoints
+    } else {
+        hp = DEFAULT_HP
+    }
+}
 
 function init() {
     for (let i = 0; i < rows; i++) {
@@ -40,6 +54,7 @@ function generateColors() {
         }
         colors.push(color)
     }
+    pairs.innerText = colors.length
 }
 
 function assignColorsToCards() {
@@ -91,35 +106,101 @@ function createGameCards() {
 }
 function makeCardsClickable() {
     const cards = document.querySelectorAll('.card')
-    for (const [i, card]  of cards.entries()) {
-        card.addEventListener('click', () => {
-            if (gameStarted) {
-                if (!chosenCard) {
-                    card.style.backgroundColor = gameCards[i].color
-                    chosenCard = {card: card, color: gameCards[i].color}
+    let clickHandler = (card, i) => {
+        if (gameStarted && !wait) {
+            if (!chosenCard) {
+                card.style.backgroundColor = gameCards[i].color
+                chosenCard = {card: card, color: gameCards[i].color}
+                if(card.classList.contains('not-chosen')) {
+                    card.classList.contains('not-chosen')
+                }
+            } else {
+                let currCard = gameCards[i]
+                if (chosenCard.color === currCard.color) {
+                    chosenCard.card.style.backgroundColor = currCard.color
+                    currCard.card.style.backgroundColor = currCard.color
+                    if (chosenCard.card.classList.contains('not-chosen')){
+                        chosenCard.classList.toggle('not-chosen')
+                    }
+                    if (currCard.card.classList.contains('not-chosen')) {
+                        currCard.classList.toggle('not-chosen')
+                    }
+                    chosenCard = null
+                    wait = false
+                    let newPairsCount = parseInt(pairs.innerText)
+                    pairs.innerText = --newPairsCount
+
+                    if(newPairsCount === 0) {
+                        gameStarted = false
+                        document.body.style.backgroundColor = 'green'
+                        let title = document.getElementById('title')
+                            title.innerText = 'You have won!'
+                    }
+
                 } else {
-                    let currCard = gameCards[i]
-                    if (chosenCard.color === currCard.color) {
-                        chosenCard.card.style.backgroundColor = currCard.color
-                        currCard.card.style.backgroundColor = currCard.color
-                    } else {
+                    if(!chosenCard.card.classList.contains('not-chosen')){
                         chosenCard.card.classList.toggle('not-chosen')
                     }
-                    chosenCard.card.style.backgroundColor = ''
-                    currCard.card.style.backgroundColor = ''
-                    chosenCard = null
+                    currCard.card.style.backgroundColor = currCard.color
+                    wait = true
+
+                    setTimeout(function() {
+                        if (chosenCard){
+                            chosenCard.card.style.backgroundColor = ''
+                        }
+                        chosenCard = null
+                        chosenCard.card.classList.toggle('not-chosen')
+                        chosenCard.card.style.backgroundColor = ''
+                        currCard.card.style.backgroundColor = ''
+                        let healthpoints = document.getElementById('hp')
+                        healthpoints.innerText = --hp
+    
+                        if (hp === 0) {
+                            let title = document.getElementById('title')
+                            title.innerText = 'You have lost!'
+                            gameStarted = false
+                            document.body.style.backgroundColor = 'tomato'
+                        }
+                        wait = false
+                    }, 1500)
+
+
                 }
+
+               
             }
-        })
+        }
+    }
+
+    for (const [i, card] of cards.entries()) {
+        card.removeEventListener('click', function() {clickHandler(card, i)}, false)
+    }
+
+    for (const [i, card]  of cards.entries()) {
+        card.addEventListener('click', function() {clickHandler(card, i)}, false)
     }
 }
 
+function resetHp() {
+    hp = DEFAULT_HP
+    document.getElementById('hp').innerText = hp
+}
 
-
-
+function resetTitle() {
+    document.getElementById('title').innerText = 'Memory Game'
+}
 
 function play() {
     gameStarted = true
+    chosenCard = null
+    gameCards = []
+    document.body.style.backgroundColor = ''
+
+    mainContainer.innerHTML = ''
+    init()
+
+    resetTitle()
+    resetHp()
     generateColors()
     resetCards()
     assignColorsToCards()
@@ -132,6 +213,6 @@ function play() {
             card.style.backgroundColor = ''
         }
 
-    }  , 1000)
+    }  , 3000)
     
 }

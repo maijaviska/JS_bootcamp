@@ -1,0 +1,18 @@
+https://www.restapitutorial.com/lessons/httpmethods.html#:~:text=The%20HTTP%20verbs%20comprise%20a,PUT%2C%20PATCH%2C%20and%20DELETE
+
+https://www.frontendmentor.io/challenges mock-up challenges
+
+Btw this is a great help for creating pixel-perfect websites Might be useful if working on web projects in the frontendmentor https://chrome.google.com/webstore/detail/perfectpixel-by-welldonec/dkaagdgjmgdmbnecmcefdhjekcoceebi
+
+https://link.medium.com/ONS5KEekbnb
+
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise
+
+https://open.spotify.com/episode/6W2dfGrYcYKGqAcgL7iH3F?si=dWECUNqnQ_-Ib1sKRV7NiA&utm_source=whatsapp vakardien uzskrēju twitterī šim podkāstam. Interesanti stāsta par robežu starp front end un back end.
+
+https://reactjs.org/docs/introducing-jsx.html
+
+https://www.sitepoint.com/understanding-and-using-rem-units-in-css/
+
+
+
